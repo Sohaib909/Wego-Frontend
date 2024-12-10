@@ -1,0 +1,38 @@
+.categories-bar {
+  border: 1px solid var(--primary);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  overflow: auto;
+
+  width: max-content;
+
+  @media screen and (max-width: 640px) {
+    width: 100%;
+  }
+
+  &-button {
+    background-color: transparent;
+    font-size: 16px;
+    padding: 15px 25px;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    &:not(:last-child) {
+      border-right: 1px solid var(--primary);
+    }
+
+    &:hover {
+      background-color: var(--primary);
+    }
+
+    &--active {
+      background-color: var(--primary);
+      font-weight: 500;
+    }
+  }
+}

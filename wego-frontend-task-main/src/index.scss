@@ -1,0 +1,48 @@
+:root {
+  font-family: 'Roboto', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  --primary: #ffc700;
+  --light-blue: #06adfb;
+  --pink: #ff6971;
+  --purple: #8c63ff;
+  --green: #4a9e87;
+  --bg-color: #f6f7f9;
+  --gray-100: #646567;
+  --gray-200: #4e5355;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  padding: 30px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
